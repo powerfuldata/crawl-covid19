@@ -1,0 +1,18 @@
+{
+  "name": "puppetter-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer-core": "^5.3.0",
+    "sequelize": "^6.3.5",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.21",
+    "@types/node": "^14.10.3",
+    "@types/puppeteer-core": "^2.0.0",
+    "@types/sequelize": "^4.28.9"
+  }
+}
