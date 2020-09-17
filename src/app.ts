@@ -1,6 +1,6 @@
-// import puppertter from 'puppeteer-core';
-const puppertter = require('puppeteer-core');
-const cheerio = require('cheerio')
+import puppertter from 'puppeteer-core';
+import cheerio from 'cheerio';
+
 const init = async () => {
   const browser = await puppertter.launch({
     executablePath: '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome',
@@ -15,8 +15,8 @@ const init = async () => {
   console.log('表头：',titles)
 
   const tbody = table.children().last();
-  const dataSource = tbody.children().map((i,row) => {
-    return row.children.reduce((obj,column, index) => {
+  const dataSource = tbody.children().map((i: number,row) => {
+    return row.children.reduce((obj: any,column: any, index: number) => {
       const text = $(column).text();
       const key = titles[index];
       if (key) {
