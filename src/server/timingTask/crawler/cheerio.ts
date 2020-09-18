@@ -1,4 +1,4 @@
-import puppetteer, {Browser} from 'puppeteer'
+import puppetteer, {Browser} from 'puppeteer-core'
 import cheerio from 'cheerio';
 import * as Config from '../../../config'
 // puppetteer配置
@@ -12,6 +12,7 @@ const browserInstance = (config: PupConfig): Promise<Browser> => {
 
 // 读取页面全部内容
 const getHtml = async (url: string): Promise<string> => {
+  console.log('爬虫url：',url)
   const browser = await browserInstance({ executablePath: Config.EXECUTABLE_PATH });
   const page = await browser.newPage();
   await page.goto(url);
