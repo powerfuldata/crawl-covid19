@@ -1,4 +1,4 @@
-import {Sequelize} from 'sequelize';
+import {Sequelize, InitOptions} from 'sequelize';
 import { MYSQL_CONFIG } from '../../config'
 
 // Sequelize实例
@@ -15,3 +15,15 @@ export const sequelize = new Sequelize({
     acquire: 300000, // 超时时间300秒
   },
 })
+
+// Model全局配置，需要个性化配置需要在init方法中实现
+export const modelOptions:InitOptions = {
+  sequelize,
+  charset:'utf-8',
+  underscored: true,// 驼峰转下划线
+  createdAt: 'createTime', // 创建时间
+  updatedAt: 'updateTime', // 修改时间
+  deletedAt: 'deletedTime',
+  timestamps: true,
+}
+export default sequelize;

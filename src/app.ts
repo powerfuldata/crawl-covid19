@@ -1,3 +1,4 @@
-import { task } from './server/timingTask';
+import './server/sequelize';
+import { insertRow, findCase,test } from './server/controller' 
 
-task();
+test();
