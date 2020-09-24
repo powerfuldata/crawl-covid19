@@ -9,6 +9,7 @@ export const sequelize = new Sequelize({
   password: MYSQL_CONFIG.PASSWORD,
   database: MYSQL_CONFIG.DATABASE,
   port: MYSQL_CONFIG.PORT,
+  logQueryParameters: true,
   pool: {
     max: 10,
     min: 5,

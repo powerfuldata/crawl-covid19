@@ -1,0 +1,492 @@
+[
+  {
+    "Country": " United States",
+    "Tested": "",
+    "Infected": "6,825,697",
+    "Recovered": "",
+    "Deceased": "199,462",
+    "Source last update": "5 hours ago",
+    "Apify last update": "6 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " India",
+    "Tested": "",
+    "Infected": "5,646,010",
+    "Recovered": "4,587,613",
+    "Deceased": "90,020",
+    "Source last update": "",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Brazil",
+    "Tested": "",
+    "Infected": "4,591,604",
+    "Recovered": "",
+    "Deceased": "138,108",
+    "Source last update": "7 hours ago",
+    "Apify last update": "6 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Russia",
+    "Tested": "17,803,955",
+    "Infected": "1,115,810",
+    "Recovered": "917,949",
+    "Deceased": "19,649",
+    "Source last update": "2 minutes ago",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Spain",
+    "Tested": "",
+    "Infected": "682,267",
+    "Recovered": "",
+    "Deceased": "30,904",
+    "Source last update": "15 hours ago",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " France",
+    "Tested": "",
+    "Infected": "468,069",
+    "Recovered": "",
+    "Deceased": "31,416",
+    "Source last update": "a day ago",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Iran",
+    "Tested": "3,800,619",
+    "Infected": "429,193",
+    "Recovered": "363,737",
+    "Deceased": "24,656",
+    "Source last update": "",
+    "Apify last update": "",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " United Kingdom",
+    "Tested": "",
+    "Infected": "403,551",
+    "Recovered": "",
+    "Deceased": "",
+    "Source last update": "14 hours ago",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Saudi Arabia",
+    "Tested": "",
+    "Infected": "330,798",
+    "Recovered": "312,684",
+    "Deceased": "4,542",
+    "Source last update": "2 months ago",
+    "Apify last update": "6 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Pakistan",
+    "Tested": "",
+    "Infected": "307,418",
+    "Recovered": "293,916",
+    "Deceased": "6,432",
+    "Source last update": "3 hours ago",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Turkey",
+    "Tested": "9,496,268",
+    "Infected": "306,302",
+    "Recovered": "269,696",
+    "Deceased": "7,639",
+    "Source last update": "",
+    "Apify last update": "6 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Italy",
+    "Tested": "",
+    "Infected": "300,897",
+    "Recovered": "219,670",
+    "Deceased": "35,738",
+    "Source last update": "12 hours ago",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Philippines",
+    "Tested": "",
+    "Infected": "283,460",
+    "Recovered": "209,885",
+    "Deceased": "4,930",
+    "Source last update": "4 days ago",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Germany",
+    "Tested": "",
+    "Infected": "274,158",
+    "Recovered": "",
+    "Deceased": "9,396",
+    "Source last update": "",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistory"
+  },
+  {
+    "Country": " Canada",
+    "Tested": "",
+    "Infected": "146,663",
+    "Recovered": "",
+    "Deceased": "9,234",
+    "Source last update": "",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistory"
+  },
+  {
+    "Country": " Romania",
+    "Tested": "2,253,380",
+    "Infected": "114,648",
+    "Recovered": "92,169",
+    "Deceased": "4,503",
+    "Source last update": "16 hours ago",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Belgium",
+    "Tested": "2,942,559",
+    "Infected": "105,226",
+    "Recovered": "",
+    "Deceased": "9,955",
+    "Source last update": "15 hours ago",
+    "Apify last update": "12 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Netherlands",
+    "Tested": "",
+    "Infected": "102,844",
+    "Recovered": "",
+    "Deceased": "6,338",
+    "Source last update": "",
+    "Apify last update": "6 minutes ago",
+    "Sources": "LatestHistory"
+  },
+  {
+    "Country": " Sweden",
+    "Tested": "",
+    "Infected": "89,436",
+    "Recovered": "",
+    "Deceased": "5,870",
+    "Source last update": "",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " China",
+    "Tested": "",
+    "Infected": "85,765",
+    "Recovered": "80,458",
+    "Deceased": "4,651",
+    "Source last update": "",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Poland",
+    "Tested": "",
+    "Infected": "80,699",
+    "Recovered": "",
+    "Deceased": "2,316",
+    "Source last update": "",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Japan",
+    "Tested": "",
+    "Infected": "79,773",
+    "Recovered": "",
+    "Deceased": "1,519",
+    "Source last update": "",
+    "Apify last update": "6 minutes ago",
+    "Sources": "LatestHistory"
+  },
+  {
+    "Country": " Honduras",
+    "Tested": "",
+    "Infected": "72,306",
+    "Recovered": "23,230",
+    "Deceased": "2,206",
+    "Source last update": "",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistory"
+  },
+  {
+    "Country": " Portugal",
+    "Tested": "",
+    "Infected": "69,663",
+    "Recovered": "45,974",
+    "Deceased": "1,925",
+    "Source last update": "a day ago",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Bahrain",
+    "Tested": "1,355,399",
+    "Infected": "66,306",
+    "Recovered": "59,367",
+    "Deceased": "131",
+    "Source last update": "",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Singapore",
+    "Tested": "",
+    "Infected": "57,627",
+    "Recovered": "57,262",
+    "Deceased": "27",
+    "Source last update": "",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Nigeria",
+    "Tested": "",
+    "Infected": "57,613",
+    "Recovered": "48,836",
+    "Deceased": "1,100",
+    "Source last update": "",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Czech Republic",
+    "Tested": "1,217,147",
+    "Infected": "53,158",
+    "Recovered": "26,151",
+    "Deceased": "531",
+    "Source last update": "5 hours ago",
+    "Apify last update": "6 minutes ago",
+    "Sources": "LatestHistory"
+  },
+  {
+    "Country": " Switzerland",
+    "Tested": "",
+    "Infected": "50,664",
+    "Recovered": "",
+    "Deceased": "1,773",
+    "Source last update": "21 hours ago",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Algeria",
+    "Tested": "",
+    "Infected": "50,214",
+    "Recovered": "35,307",
+    "Deceased": "1,689",
+    "Source last update": "14 hours ago",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Palestine",
+    "Tested": "388,201",
+    "Infected": "46,614",
+    "Recovered": "33,602",
+    "Deceased": "314",
+    "Source last update": "2 minutes ago",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Austria",
+    "Tested": "1,472,647",
+    "Infected": "39,702",
+    "Recovered": "30,312",
+    "Deceased": "771",
+    "Source last update": "",
+    "Apify last update": "6 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Azerbaijan",
+    "Tested": "1,064",
+    "Infected": "39,378",
+    "Recovered": "36,949",
+    "Deceased": "578",
+    "Source last update": "",
+    "Apify last update": "5 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Serbia",
+    "Tested": "1,084,893",
+    "Infected": "32,999",
+    "Recovered": "31,933",
+    "Deceased": "743",
+    "Source last update": "",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Denmark",
+    "Tested": "3,442,785",
+    "Infected": "23,799",
+    "Recovered": "18,035",
+    "Deceased": "641",
+    "Source last update": "a day ago",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " South Korea",
+    "Tested": "2,256,899",
+    "Infected": "23,216",
+    "Recovered": "",
+    "Deceased": "388",
+    "Source last update": "in 7 hours",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Hungary",
+    "Tested": "632,031",
+    "Infected": "19,499",
+    "Recovered": "4,559",
+    "Deceased": "694",
+    "Source last update": "20 hours ago",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Bulgaria",
+    "Tested": "",
+    "Infected": "19,123",
+    "Recovered": "13,748",
+    "Deceased": "767",
+    "Source last update": "",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Croatia",
+    "Tested": "",
+    "Infected": "15,136",
+    "Recovered": "12,987",
+    "Deceased": "255",
+    "Source last update": "",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistory"
+  },
+  {
+    "Country": " Norway",
+    "Tested": "972,485",
+    "Infected": "13,000",
+    "Recovered": "",
+    "Deceased": "267",
+    "Source last update": "a day ago",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Kosovo",
+    "Tested": "",
+    "Infected": "12,683",
+    "Recovered": "8,788",
+    "Deceased": "488",
+    "Source last update": "",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Malaysia",
+    "Tested": "",
+    "Infected": "10,358",
+    "Recovered": "9,563",
+    "Deceased": "130",
+    "Source last update": "19 hours ago",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Luxembourg",
+    "Tested": "922,437",
+    "Infected": "9,426",
+    "Recovered": "",
+    "Deceased": "124",
+    "Source last update": "5 days ago",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Finland",
+    "Tested": "908,000",
+    "Infected": "9,195",
+    "Recovered": "",
+    "Deceased": "341",
+    "Source last update": "",
+    "Apify last update": "2 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Slovakia",
+    "Tested": "416,864",
+    "Infected": "6,931",
+    "Recovered": "3,668",
+    "Deceased": "40",
+    "Source last update": "",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistory"
+  },
+  {
+    "Country": " Slovenia",
+    "Tested": "203,647",
+    "Infected": "4,558",
+    "Recovered": "",
+    "Deceased": "142",
+    "Source last update": "20 hours ago",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Lithuania",
+    "Tested": "",
+    "Infected": "3,859",
+    "Recovered": "2,225",
+    "Deceased": "87",
+    "Source last update": "",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  },
+  {
+    "Country": " Estonia",
+    "Tested": "192,066",
+    "Infected": "2,976",
+    "Recovered": "",
+    "Deceased": "64",
+    "Source last update": "",
+    "Apify last update": "5 minutes ago",
+    "Sources": "LatestHistory"
+  },
+  {
+    "Country": " Vietnam",
+    "Tested": "",
+    "Infected": "1,068",
+    "Recovered": "980",
+    "Deceased": "35",
+    "Source last update": "6 hours ago",
+    "Apify last update": "7 minutes ago",
+    "Sources": "LatestHistorySource"
+  }
+]
