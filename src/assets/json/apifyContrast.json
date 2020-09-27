@@ -1,0 +1,212 @@
+{
+  "Singapore": {
+    "country": "Singapore",
+    "cnName": "新加坡",
+    "apifyName": "Singapore"
+  },
+  "Sweden": {
+    "country": "Sweden",
+    "cnName": "瑞典",
+    "apifyName": "Sweden"
+  },
+  "Japan": {
+    "country": "Japan",
+    "cnName": "日本",
+    "apifyName": "Japan"
+  },
+  "Malaysia": {
+    "country": "Malaysia",
+    "cnName": "马来西亚",
+    "apifyName": "Malaysia"
+  },
+  "Nigeria": {
+    "country": "Nigeria",
+    "cnName": "尼日利亚",
+    "apifyName": "Nigeria"
+  },
+  "Algeria": {
+    "country": "Algeria",
+    "cnName": "阿尔及利亚",
+    "apifyName": "Algeria"
+  },
+  "Czech Republic": {
+    "country": "Czech Republic",
+    "cnName": "捷克",
+    "apifyName": "Czech Republic"
+  },
+  "Netherlands": {
+    "country": "Netherlands",
+    "cnName": "荷兰",
+    "apifyName": "Netherlands"
+  },
+  "Slovenia": {
+    "country": "Slovenia",
+    "cnName": "斯洛文尼亚",
+    "apifyName": "Slovenia"
+  },
+  "Romania": {
+    "country": "Romania",
+    "cnName": "罗马尼亚",
+    "apifyName": "Romania"
+  },
+  "Spain": {
+    "country": "Spain",
+    "cnName": "西班牙",
+    "apifyName": "Spain"
+  },
+  "Finland": {
+    "country": "Finland",
+    "cnName": "芬兰",
+    "apifyName": "Finland"
+  },
+  "Pakistan": {
+    "country": "Pakistan",
+    "cnName": "巴基斯坦",
+    "apifyName": "Pakistan"
+  },
+  "Honduras": {
+    "country": "Honduras",
+    "cnName": "洪都拉斯",
+    "apifyName": "Honduras"
+  },
+  "Germany": {
+    "country": "Germany",
+    "cnName": "德国",
+    "apifyName": "Germany"
+  },
+  "Serbia": {
+    "country": "Serbia",
+    "cnName": "塞尔维亚",
+    "apifyName": "Serbia"
+  },
+  "Canada": {
+    "country": "Canada",
+    "cnName": "加拿大",
+    "apifyName": "Canada"
+  },
+  "India": {
+    "country": "India",
+    "cnName": "印度",
+    "apifyName": "India"
+  },
+  "Turkey": {
+    "country": "Turkey",
+    "cnName": "土耳其",
+    "apifyName": "Turkey"
+  },
+  "Bulgaria": {
+    "country": "Bulgaria",
+    "cnName": "保加利亚",
+    "apifyName": "Bulgaria"
+  },
+  "Azerbaijan": {
+    "country": "Azerbaijan",
+    "cnName": "阿塞拜疆",
+    "apifyName": "Azerbaijan"
+  },
+  "Croatia": {
+    "country": "Croatia",
+    "cnName": "克罗地亚",
+    "apifyName": "Croatia"
+  },
+  "France": {
+    "country": "France",
+    "cnName": "法国",
+    "apifyName": "France"
+  },
+  "Bahrain": {
+    "country": "Bahrain",
+    "cnName": "巴林",
+    "apifyName": "Bahrain"
+  },
+  "Belgium": {
+    "country": "Belgium",
+    "cnName": "比利时",
+    "apifyName": "Belgium"
+  },
+  "Switzerland": {
+    "country": "Switzerland",
+    "cnName": "瑞士",
+    "apifyName": "Switzerland"
+  },
+  "Estonia": {
+    "country": "Estonia",
+    "cnName": "爱沙尼亚",
+    "apifyName": "Estonia"
+  },
+  "Hungary": {
+    "country": "Hungary",
+    "cnName": "匈牙利",
+    "apifyName": "Hungary"
+  },
+  "Lithuania": {
+    "country": "Lithuania",
+    "cnName": "立陶宛",
+    "apifyName": "Lithuania"
+  },
+  "Poland": {
+    "country": "Poland",
+    "cnName": "波兰",
+    "apifyName": "Poland"
+  },
+  "Norway": {
+    "country": "Norway",
+    "cnName": "挪威",
+    "apifyName": "Norway"
+  },
+  "Saudi Arabia": {
+    "country": "Saudi Arabia",
+    "cnName": "沙特阿拉伯",
+    "apifyName": "Saudi Arabia"
+  },
+  "China": {
+    "country": "China",
+    "cnName": "中国",
+    "apifyName": "China"
+  },
+  "Philippines": {
+    "country": "Philippines",
+    "cnName": "菲律宾",
+    "apifyName": "Philippines"
+  },
+  "Slovakia": {
+    "country": "Slovakia",
+    "cnName": "斯洛伐克",
+    "apifyName": "Slovakia"
+  },
+  "Denmark": {
+    "country": "Denmark",
+    "cnName": "丹麦",
+    "apifyName": "Denmark"
+  },
+  "Brazil": {
+    "country": "Brazil",
+    "cnName": "巴西",
+    "apifyName": "Brazil"
+  },
+  "Portugal": {
+    "country": "Portugal",
+    "cnName": "葡萄牙",
+    "apifyName": "Portugal"
+  },
+  "Italy": {
+    "country": "Italy",
+    "cnName": "意大利",
+    "apifyName": "Italy"
+  },
+  "United Kingdom": {
+    "country": "United Kingdom",
+    "cnName": "联合王国",
+    "apifyName": "United Kingdom"
+  },
+  "Austria": {
+    "country": "Austria",
+    "cnName": "奥地利",
+    "apifyName": "Austria"
+  },
+  "Luxembourg": {
+    "country": "Luxembourg",
+    "cnName": "卢森堡",
+    "apifyName": "Luxembourg"
+  }
+}

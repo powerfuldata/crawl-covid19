@@ -7,6 +7,7 @@ export class CountryCase extends BaseModel{
   public caseId!: number;
   public countryCode?: number;
   public country?: string;
+  public countryCnName?: string;
   public tested?: number;
   public infected?: number;
   public recovered?: number;
@@ -17,6 +18,7 @@ CountryCase.init({
   caseId: { type: DataTypes.BIGINT },
   countryCode: { type: DataTypes.BIGINT},
   country: { type: DataTypes.STRING },
+  countryCnName: { type: DataTypes.STRING },
   tested: { type: DataTypes.BIGINT },
   infected: { type: DataTypes.BIGINT },
   recovered: { type: DataTypes.BIGINT },
