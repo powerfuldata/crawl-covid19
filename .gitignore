@@ -3,3 +3,4 @@ yarn.lock
 src/assets/Chromium.app
 dist/
 build/
+.vscode/
