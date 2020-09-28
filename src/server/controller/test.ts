@@ -6,6 +6,9 @@ import { Literal } from 'sequelize/types/lib/utils';
 import os, {NetworkInterfaceInfo} from 'os';
 import {TextEncoder} from 'text-encoding'
 import { generateId } from '../../utils/snowFlake'
+import Long from 'long'
+import BigInt,{BigInteger} from 'big-integer'
+
 
 export const insertRow = () => {
   CountryCase.upsert({
@@ -63,32 +66,38 @@ export const test = () => {
   console.log('question mark:',Object.keys(arr1[3]))
 }
 
-export const getHostName = () => {
-  const hostName = os.hostname()
-  console.log('homedir:',os.homedir())
-  console.log('hostName:',hostName)
-  const obj = os.networkInterfaces()
-  let address: string = ''
-  Object.keys(obj).find(o => obj[o]?.find((info: NetworkInterfaceInfo) => {
-    const isIp = info.family === 'IPv4'
-    isIp && (address = info.address || '');
-    return isIp
-  }))
-  console.log('address:',address)
+export const getId = () => {
   const start = Date.now();
-  for(let i = 0; i < 100; i ++) {
+  const set = new Set();
+  for(let i = 0; i < 100000; i ++) {
     const id = generateId();
-    console.log('id:',id)
+    set.add(id)
   }
   const end =  Date.now()
   console.log('所需时间：', end - start)
-
-  console.log('SEQ_MAX_NUM:',~(-1 << 12))
+  console.log('id数量：',set.size)
 }
 
 export const testSnowFlake = () => {
-  for(let i = 0; i < 1; i ++) {
+  const set = new Set();
+  for(let i = 0; i < 10; i ++) {
     const id = generateId()
-    console.log('雪花id:', id)
+    set.add(id)
+    // console.log('雪花id:', id)
   }
+}
+export const testLong = () => {
+  const num1 = Long.fromString('9876543211234567')
+  const num2 = Long.fromString('100')
+  num2.sub
+  const sum = num1.add(num2)
+  console.log('sum-long:',sum.toString())
+}
+// 测试bigint
+export const testBigInt = () => {
+  const set = new Set<string>();
+  set.add('1');
+  set.add('1');
+  set.add('1');
+  console.log(Array.from(set))
 }
