@@ -19,7 +19,7 @@ node 11以上版本提供了`TextEncoder`方式将字符串转换为`Uint8Array`
   var uint8array = new TextEncoder().encode(string);
   var string = new TextDecoder(encoding).decode(uint8array);
 ```
-# JavaScript不支持`Long`类型
+# 3.JavaScript不支持`Long`类型
 
 - [使用ES2020支持的BigInt类型，可以表示大于`2^53 - 1`的数字](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
 - [使用`long.js`也可以支持大于`2^53 - 1`的数字](https://github.com/dcodeIO/long.js)

@@ -5,8 +5,8 @@ import bigInt from 'big-integer'
 const START_TIME: number = 1420041600000; // 开始时间,定义为2015-01-01 00:00:00
 const SEQ_LEN: number = 12; // 毫秒内序列所占长度
 const TIME_LEN: number = 41; // 时间部分所占长度
-const WORK_LEN: number = 5 // 机器id所占长度
 const TIME_LEFT_BIT: number = 64 - 1 - TIME_LEN; // 时间部分向左移动的位数 22
+const WORK_LEN: number = 5 // 机器id所占长度
 const DATA_LEN: number = 5; // 数据中心id所占长度
 const DATA_MAX_NUM: number = ~(-1 << DATA_LEN); // 数据中心id最大值 31
 const DATA_LEFT_BIT: number = TIME_LEFT_BIT - DATA_LEN; // 数据中心id左移位数 17

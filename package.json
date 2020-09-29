@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "test": "ts-node test/index.js"
   },
   "dependencies": {
     "big-integer": "^1.6.48",

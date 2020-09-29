@@ -8,7 +8,8 @@
   ],
   "verbose": true,
   "execMap": {
-    "js": "node --harmony"
+    "js": "node --harmony",
+    "test": "node test/index.js"
   },
   "exec":"ts-node src/app.ts",
   "events": {
