@@ -3,6 +3,8 @@ import { ICrawler, runCrawler } from './crawler'
 import { ApifyList } from './crawler/impl/ApifyList'
 import schedule from 'node-schedule'
 import moment from 'moment';
+import { generateId } from '../../utils/snowFlake';
+import { CountryCase } from '../model'
 
 // 执行延迟任务
 export const task = () => {
@@ -12,7 +14,7 @@ export const task = () => {
     // 爬虫回去数据
     runCrawler(new ApifyList()).then((list: any[]) => {
       // 爬取疫情网站，获取各国疫情信息
-      const newCaseList: any[] = list.map((item: any = {}) => {
+      const newCaseList = list.map((item: any = {}) => {
         const {
           Country: country = '',
           Tested: tested = '',
@@ -28,10 +30,16 @@ export const task = () => {
           infected,
           recovered,
           deceased,
+          id: generateId()
         }
       });
       // 入库
-      
+      console.log('newCaseList:',newCaseList)
+      CountryCase.bulkCreate(newCaseList,{
+        logging: (sql: string, time) => {
+          console.log('CountryCase批量跟新时间：',time)
+        }
+      })
     })
   })
 }

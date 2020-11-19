@@ -8,6 +8,7 @@ export const getCountryCnNameFromApify = () => {
   const caseList: any[] = require('../../assets/json/caseList.json')
   sequelize.query<Country>(`select
   country,
+  id,
   case
   ${caseList.reduce((str: string, item: any) => str + ` when country like '%${item.Country!.trim()}%' then cn_name`, '')}
   end 'cnName'

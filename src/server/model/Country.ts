@@ -4,7 +4,7 @@ import { DataTypes } from 'sequelize'
 
 // 国家
 export class Country extends BaseModel {
-  public id!: number;
+  public id!: string;
   public cnName?: string;
   public country?: string;
   public slug?: string;// 国家简称
