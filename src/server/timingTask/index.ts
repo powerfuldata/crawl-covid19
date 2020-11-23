@@ -8,7 +8,8 @@ import { CountryCase } from '../model'
 
 // 执行延迟任务
 export const task = () => {
-  schedule.scheduleJob('0/50 * * * * ?',(fireDate: Date) => {
+  // 每分钟的第20/50秒各执行一次
+  schedule.scheduleJob('20/50 * * * * ?',(fireDate: Date) => {
     console.log('定时任务触发时间：', moment(fireDate).format('yyyy-MM-DD HH:mm:ss'))
     const contrastObj: any = require('../../assets/json/apifyContrast.json')
     // 爬虫回去数据
@@ -26,11 +27,11 @@ export const task = () => {
           country:country.trim(),
           countryCode: contrastObj[country.trim()]?.countryCode,
           cnName: contrastObj[country.trim()]?.cnName,
-          tested,
-          infected,
-          recovered,
-          deceased,
-          id: generateId()
+          tested: tested * 1,
+          infected: infected * 1,
+          recovered: recovered * 1,
+          deceased: deceased * 1,
+          caseId: generateId()
         }
       });
       // 入库

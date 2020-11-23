@@ -15,14 +15,14 @@ export class CountryCase extends BaseModel{
   public sourceUpdateTime?: Date;
 };
 CountryCase.init({
-  caseId: { type: DataTypes.BIGINT },
+  caseId: { type: DataTypes.BIGINT,primaryKey: true },
   countryCode: { type: DataTypes.BIGINT},
   country: { type: DataTypes.STRING },
   countryCnName: { type: DataTypes.STRING },
-  tested: { type: DataTypes.BIGINT },
-  infected: { type: DataTypes.BIGINT },
-  recovered: { type: DataTypes.BIGINT },
-  deceased: { type: DataTypes.BIGINT },
+  tested: { type: DataTypes.BIGINT,defaultValue: null },
+  infected: { type: DataTypes.BIGINT,defaultValue: null },
+  recovered: { type: DataTypes.BIGINT,defaultValue: null },
+  deceased: { type: DataTypes.BIGINT,defaultValue: null },
   sourceUpdateTime: { type: DataTypes.STRING },
 },{
   ...modelOptions,
