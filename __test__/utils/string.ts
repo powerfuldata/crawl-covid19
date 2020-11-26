@@ -1,6 +1,6 @@
 import { comma2Number } from '../../src/utils/stringUtil';
 
-// 测试字符串转数字
+// 测试字符串转数字: yarn run ts-node __test__/utils/string.ts
 (() => {
   console.log('输出', comma2Number('1,366'))
   console.log('输出', comma2Number(''))

@@ -6,6 +6,7 @@ import { sequelize } from '../sequelize'
 // 中文国家名称对照表（对照apify.com网站）
 export const getCountryCnNameFromApify = () => {
   const caseList: any[] = require('../../assets/json/caseList.json')
+  // 查询数据库
   sequelize.query<Country>(`select
   country,
   id,
@@ -38,3 +39,4 @@ export const translateApiFyCnName = () => {
   },{});
   console.log('obj:',obj)
 }
+

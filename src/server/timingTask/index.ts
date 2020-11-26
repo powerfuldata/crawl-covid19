@@ -4,7 +4,8 @@ import { ApifyList } from './crawler/impl/ApifyList'
 import schedule from 'node-schedule'
 import moment from 'moment';
 import { generateId } from '../../utils/snowFlake';
-import { CountryCase } from '../model'
+import { CountryCase } from '../model';
+import {comma2Number} from '../../utils/stringUtil'
 
 // 执行延迟任务
 export const task = () => {
@@ -25,12 +26,12 @@ export const task = () => {
         } = item;
         return {
           country:country.trim(),
-          countryCode: contrastObj[country.trim()]?.countryCode,
+          countryCode: contrastObj[country.trim()]?.country,
           cnName: contrastObj[country.trim()]?.cnName,
-          tested: tested * 1,
-          infected: infected * 1,
-          recovered: recovered * 1,
-          deceased: deceased * 1,
+          tested: comma2Number(tested),
+          infected: comma2Number(tested),
+          recovered: comma2Number(tested),
+          deceased: comma2Number(tested),
           caseId: generateId()
         }
       });
