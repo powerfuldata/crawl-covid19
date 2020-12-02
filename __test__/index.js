@@ -1,4 +1,2 @@
-import { PredictTheWinner } from './PredictTheWinner'
-
-const result = PredictTheWinner()
-console.log('result:',result)
+const str = `name=${`张三`}`
+console.log('字符串=',str)

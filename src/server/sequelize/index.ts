@@ -27,4 +27,7 @@ export const modelOptions:InitOptions = {
   deletedAt: 'deletedTime',
   timestamps: true,
 }
+// queryInterface是一个基础API，提供基本的增删改查，批量操作
+export const queryInterfaceInstance = sequelize.getQueryInterface()
 export default sequelize;
+
