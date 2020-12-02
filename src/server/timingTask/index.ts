@@ -6,10 +6,14 @@ import moment from 'moment';
 import { generateId } from '../../utils/snowFlake';
 import { CountryCase } from '../model';
 import {comma2Number} from '../../utils/stringUtil'
+import {UpdateCountry} from './crawler/impl/UpdateCountry'
 
-// 执行延迟任务
-export const task = () => {
+/**
+ * 定时任务，每日爬取疫情网站信息
+ */
+export const captureApifyInfo = () => {
   // 每分钟的第20/50秒各执行一次
+  // crone time规则生成器，https://cron.qqe2.com/
   schedule.scheduleJob('20/50 * * * * ?',(fireDate: Date) => {
     console.log('定时任务触发时间：', moment(fireDate).format('yyyy-MM-DD HH:mm:ss'))
     const contrastObj: any = require('../../assets/json/apifyContrast.json')
@@ -44,5 +48,12 @@ export const task = () => {
       })
     })
   })
+}
+
+/**
+ * 定时任务：每天6点更新国家表
+ */
+export const updateCountryInTiming = () => {
+  runCrawler(new UpdateCountry());
 }
 

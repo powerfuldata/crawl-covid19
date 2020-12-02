@@ -42,6 +42,6 @@ export const batchUpdateApifyName = (values: {id:string, apifyCountry:string, co
     type: QueryTypes.UPDATE,
   }).then(res => {
     console.log('成功数量=',res.length)
-  })
+  }).catch(e => console.log(e))
   
 }

@@ -1,11 +1,11 @@
-import { TestModel } from '../model/TestModel';
+import { TestModel } from '../src/server/model/TestModel';
 import { Sequelize, QueryTypes } from 'sequelize'
-import {Country, CountryCase } from '../model';
-import { sequelize } from '../sequelize'
+import {Country, CountryCase } from '../src/server/model';
+import { sequelize } from '../src/server/sequelize'
 import { Literal } from 'sequelize/types/lib/utils';
 import os, {NetworkInterfaceInfo} from 'os';
 import {TextEncoder} from 'text-encoding'
-import { generateId } from '../../utils/snowFlake'
+import { generateId } from '../src/utils/snowFlake'
 import Long from 'long'
 import BigInt,{BigInteger} from 'big-integer'
 
