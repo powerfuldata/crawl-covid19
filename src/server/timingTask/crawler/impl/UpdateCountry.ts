@@ -6,6 +6,7 @@ import {updateCovid19CountryName} from '../../../service/CountryService'
  */
 export class UpdateCountry implements ICrawler {
   async run():Promise<any[]> {
+    console.log('xxxxx')
     updateCovid19CountryName();
     return Promise.resolve([])
   };

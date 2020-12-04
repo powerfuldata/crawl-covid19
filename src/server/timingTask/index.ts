@@ -54,6 +54,12 @@ export const captureApifyInfo = () => {
  * 定时任务：每天6点更新国家表
  */
 export const updateCountryInTiming = () => {
-  runCrawler(new UpdateCountry());
+  // 每20秒执行一次，0/20 * * * * ?
+  // 每天6点执行一次，0 0 6 * * ?
+  // 20/50 * * * * ?
+  schedule.scheduleJob('0 0 6 * * ?',() => {
+    runCrawler(new UpdateCountry());
+  })
+  
 }
 
