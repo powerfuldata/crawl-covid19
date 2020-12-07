@@ -1,7 +1,7 @@
 import {Country} from '../index';
 import { queryInterfaceInstance, sequelize } from '../../sequelize';
-import { QueryTypes} from 'sequelize';
-import {getCurrentTimeStr} from '../../../utils/format'
+import { QueryTypes, Op} from 'sequelize';
+import {getCurrentTimeStr} from '../../../utils/format';
 
 /**
  * 查询apifyCountry=’‘的所有记录
@@ -11,6 +11,17 @@ export const selectWithoutApifyName = async (): Promise<Country[]> => {
     raw: true,// 去除sequelize其他字段
     attributes:['id','cnName','country','slug','iso2','apifyCountry'],
     where: { apifyCountry: '' }
+  });
+  return countryList
+}
+/**
+ * 查询所有`apifyCountry`不为空的数据
+ */
+export const selectAllApifyNames = async (): Promise<Country[]> => {
+  const countryList: Country[] = await Country.findAll({
+    raw: true,// 去除sequelize其他字段
+    attributes:['id','cnName','country','slug','iso2','apifyCountry'],
+    where: { apifyCountry: { [Op.ne]: ''} } // Op.ne是`not equal`的含义，相当于`!=`
   });
   return countryList
 }
