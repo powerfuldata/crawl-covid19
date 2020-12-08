@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon",
-    "test": "ts-node test/index.js"
+    "test": "ts-node test/index.js",
+    "build": "tsc"
   },
   "dependencies": {
     "big-integer": "^1.6.48",

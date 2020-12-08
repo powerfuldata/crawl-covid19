@@ -4,11 +4,14 @@ import { ApifyList } from './crawler/impl/ApifyList'
 import schedule from 'node-schedule'
 import moment from 'moment';
 import { generateId } from '../../utils/snowFlake';
-import { CountryCase,Country, CountryType } from '../model';
+import { CountryCase,Country, CountryType,CountryCaseType } from '../model';
 import {comma2Number} from '../../utils/stringUtil'
 import {UpdateCountry} from './crawler/impl/UpdateCountry'
-import * as CountryMapper from '../model/dao/CountryMapper'
+import * as CountryMapper from '../model/dao/CountryMapper';
 
+interface DataType {
+  [prop:string]:string
+}
 /**
  * 定时任务，每日爬取疫情网站信息
  */
@@ -29,9 +32,9 @@ export const captureApifyInfo = () => {
     },new Map())
     // console.log('map=',countryMap)
     // 爬虫回去数据
-    runCrawler(new ApifyList()).then((list: any[]) => {
+    runCrawler(new ApifyList()).then((list: {[prop:string]:string}[]) => {
       // 爬取疫情网站，获取各国疫情信息
-      const newCaseList = list.map((item: any = {}) => {
+      const newCaseList: CountryCaseType[] = list.map((item) => {
         const {
           Country: country = '',
           Tested: tested = '',
@@ -40,20 +43,22 @@ export const captureApifyInfo = () => {
           Deceased: deceased = '',
         } = item;
         return {
-          country:country.trim(),
-          countryCode: countryMap.get(country.trim())?.id || '',
-          cnName: countryMap.get(country.trim())?.cnName || '',
+          country: country.trim(),
+          countryCode: countryMap.get(country.trim())?.id || '-1',
+          countryCnName: countryMap.get(country.trim())?.cnName || '',
           tested: comma2Number(tested),
           infected: comma2Number(infected),
           recovered: comma2Number(recovered),
           deceased: comma2Number(deceased),
-          caseId: generateId()
+          caseId: generateId(),
+          statisticDate: new Date()
         }
       });
-      // 入库
+      console.log(newCaseList.filter(i => !i.countryCode))
+      // 添加到数据库
       CountryCase.bulkCreate(newCaseList,{
         logging: (sql: string, time) => {
-          console.log('CountryCase批量跟新时间：',time)
+          console.log('疫情信息爬取成功：',time)
         }
       })
     })
