@@ -54,11 +54,11 @@ export const captureApifyInfo = () => {
           statisticDate: new Date()
         }
       });
-      console.log(newCaseList.filter(i => !i.countryCode))
+      newCaseList.length = 5
       // 添加到数据库
       CountryCase.bulkCreate(newCaseList,{
         logging: (sql: string, time) => {
-          console.log('疫情信息爬取成功：',time)
+          console.log('疫情信息爬取成功：',sql)
         }
       })
     })
